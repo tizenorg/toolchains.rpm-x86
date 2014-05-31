@@ -1,0 +1,19 @@
+* Fri Jul  6 14:30:00 KST 2012 - UkJung Kim <ujkim@samsung.com> - 1.0
+- Added and updated OBS-Accelerator-0.1.tar.bz2
+
+* Sun Apr 24 08:02:35 UTC 2011 - Jan-Simon Möller <jsmoeller@linuxfoundation.org> - 1.0
+- Add baselibs.conf to src.rpm
+
+* Fri Jan 21 08:13:00 UTC 2011 Carsten Munk <carsten@maemo.org> - 1.0
+- Change ln -s to cp, as 'build' script does a test -x rpmsign from outside the
+  chroot and this obviously doesn't evaluate correctly. This fixes
+  build log artifacts such as: 
+  warning: .init_b_cache/kernel-headers.rpm: Header V3 DSA/SHA1 Signature, 
+  key ID 79fc1f8a: NOKEY  
+- Remove verbose output of scripts
+
+* Mon Jan  3 21:03:00 UTC 2011 Carsten Munk <carsten@maemo.org> - 1.0
+- Part of BMC#12113 (speedrpm implementation)
+- Add armv7hl and armv7nhl support
+- Remove /usr/lib/rpm/debugedit in this package, it's part of rpm-build, not rpm
+- Initial version on meego.com (based off Jan-Simon Moller's other -x86 packages)
